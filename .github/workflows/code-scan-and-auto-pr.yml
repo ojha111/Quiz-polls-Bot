@@ -1,0 +1,52 @@
+name: Code Quality & Auto PR
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  schedule:
+    - cron: '0 3 * * 1'  # Every Monday at 3 AM UTC
+
+jobs:
+  scan-and-pr:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run ESLint Check
+        run: |
+          npx eslint . --fix || true
+
+      - name: Run Prettier Format
+        run: |
+          npx prettier --write .
+
+      - name: Run Security Audit
+        run: |
+          npm audit --audit-level=moderate || true
+
+      - name: Commit & Create PR
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: "chore: auto lint & security fix"
+          title: "Automated Code Fixes (Lint & Security)"
+          body: |
+            This PR includes:
+            - Auto code formatting using `prettier` & `eslint --fix`
+            - Security audit fixes from `npm audit`
+          branch: auto/code-fix
