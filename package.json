@@ -1,0 +1,15 @@
+{
+  "name": "telegram-poll-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "Op_poll.js",
+  "scripts": {
+    "start": "node Op_poll.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.0",
+    "express": "^4.18.2",
+    "telegraf": "^4.12.2",
+    "telegraf-ratelimit": "^2.0.0"
+  }
+}
