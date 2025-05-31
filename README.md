@@ -31,9 +31,6 @@ git clone https://github.com/SudoR2spr/Quiz-polls-Bot.git
 cd Quiz-polls-Bot
 npm install```
 
-
----
-
 🔧 Environment Variables
 
 Create a .env file in the root directory:
@@ -44,19 +41,13 @@ BASE_URL=https://your-app-url.com
 PORT=3000
 ```
 
-
----
-
-🏃‍♂️ Run the Bot
+# 🏃‍♂️ Run the Bot
 
 npm start
 
 The bot will start and respond to /start, /help, /poll, /pollquiz, and /pollmult commands.
 
-
----
-
-🛠 Available Commands
+# 🛠 Available Commands
 
 Command	Description
 /start	Sends welcome image and buttons
@@ -66,8 +57,6 @@ Command	Description
 /pollmult	Advanced format: options in A/B/C form
 /future	(Planned) Show upcoming features
 
----
-
 🖼 Welcome Image & Buttons
 
 The /start command sends an image with:
@@ -76,11 +65,9 @@ The /start command sends an image with:
 
 🔗 External button: Join Channel
 
-
 If message editing fails, the bot deletes the previous one and sends a new reply.
 
 
----
 
 📖 Example Usage
 
@@ -99,17 +86,12 @@ Paris ✅ | Berlin | Madrid
 Correct answer is Paris.
 
 
----
-
 🔒 Rate Limiting
 
 To avoid abuse, each user can trigger a command once every 3 seconds. If exceeded, the bot replies:
 
 > ❌ দয়া করে একটু অপেক্ষা করুন! খুব দ্রুত কমান্ড পাঠাচ্ছেন।
 
-
-
----
 
 💡 Planned Features
 
@@ -122,19 +104,8 @@ To avoid abuse, each user can trigger a command once every 3 seconds. If exceede
 📄 Poll Templates
 
 
----
+## 📜 License
 
-🤝 Support
+MIT License © [SudoR2spr]
 
-📬 Join Channel
-
-📥 Request Support
-
-
----
-
-📜 License
-
-MIT License © [YourName or Org]
-
----
+See the [LICENSE](./LICENSE) file for more info.
