@@ -31,6 +31,9 @@ A powerful and multilingual Telegram bot to create professional-looking polls wi
 - 🧩 Modular and easy-to-extend structure  
 
 ---
+## 🚀 Deploy
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SudoR2spr/Quiz-polls-Bot)
 
 ## 🚀 Deployment
 
