@@ -1,0 +1,28 @@
+{
+  "name": "Quiz Polls Bot",
+  "description": "A Telegram poll bot with quiz and advanced features",
+  "repository": "https://github.com/SudoR2spr/Quiz-polls-Bot",
+  "keywords": ["telegram", "poll", "quiz", "bot", "telegraf"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Telegram Bot Token",
+      "required": true
+    },
+    "BASE_URL": {
+      "description": "Your App base URL (e.g. https://your-app-name.herokuapp.com)",
+      "required": true
+    },
+    "PORT": {
+      "description": "Port number (keep 3000 or leave empty)",
+      "value": "3000"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "echo Bot deployed successfully!"
+  }
+}
