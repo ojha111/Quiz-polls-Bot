@@ -6,12 +6,12 @@ A powerful and multilingual Telegram bot to create professional-looking polls wi
 
 ## 📌 Features
 
-- 🎯 Basic, Quiz, and Multi-format Polls
-- 🌐 Language-ready format (currently English, extensible)
-- 🧠 Rate-limiting to avoid spam
-- 📸 Welcome Image with Inline Buttons
-- 🔄 Smart Message Editing for Help/Back buttons
-- 🧩 Modular and easy-to-extend structure
+- 🎯 Basic, Quiz, and Multi-format Polls  
+- 🌐 Language-ready format (currently English, extensible)  
+- 🧠 Rate-limiting to avoid spam  
+- 📸 Welcome Image with Inline Buttons  
+- 🔄 Smart Message Editing for Help/Back buttons  
+- 🧩 Modular and easy-to-extend structure  
 
 ---
 
@@ -19,7 +19,7 @@ A powerful and multilingual Telegram bot to create professional-looking polls wi
 
 ### 🧱 Prerequisites
 
-- Node.js (v18 or above)
+- Node.js (v18 or above)  
 - Telegram Bot Token from [BotFather](https://t.me/BotFather)
 
 ---
@@ -29,83 +29,98 @@ A powerful and multilingual Telegram bot to create professional-looking polls wi
 ```bash
 git clone https://github.com/SudoR2spr/Quiz-polls-Bot.git
 cd Quiz-polls-Bot
-npm install```
-
-🔧 Environment Variables
-
-Create a .env file in the root directory:
-
+npm install
 ```
+
+---
+
+### 🔧 Environment Variables
+
+Create a `.env` file in the root directory with the following:
+
+```env
 BOT_TOKEN=your_bot_token_here
 BASE_URL=https://your-app-url.com
 PORT=3000
 ```
 
-# 🏃‍♂️ Run the Bot
+---
 
+## 🏃‍♂️ Run the Bot
+
+```bash
 npm start
+```
 
-The bot will start and respond to /start, /help, /poll, /pollquiz, and /pollmult commands.
+The bot will start and respond to the following commands:
 
-# 🛠 Available Commands
+---
 
-Command	Description
-/start	Sends welcome image and buttons
-/help	Shows poll creation guide
-/poll	Basic poll: `/poll "Question"
-/pollquiz	Quiz poll with explanation
-/pollmult	Advanced format: options in A/B/C form
-/future	(Planned) Show upcoming features
+## 🛠 Available Commands
 
-🖼 Welcome Image & Buttons
+| Command      | Description                                |
+|--------------|--------------------------------------------|
+| /start       | Sends welcome image and buttons            |
+| /help        | Shows poll creation guide                  |
+| /poll        | Basic poll: `/poll "Question"`             |
+| /pollquiz    | Quiz poll with explanation                 |
+| /pollmult    | Advanced format: options in A/B/C form     |
+| /future      | (Planned) Show upcoming features           |
 
-The /start command sends an image with:
+---
 
-✅ Inline button: Help
+## 🖼 Welcome Image & Buttons
 
-🔗 External button: Join Channel
+The `/start` command sends an image with:
 
-If message editing fails, the bot deletes the previous one and sends a new reply.
+- ✅ Inline button: Help  
+- 🔗 External button: Join Channel  
 
+If message editing fails, the bot deletes the previous message and sends a new one.
 
+---
 
-📖 Example Usage
+## 📖 Example Usage
 
-Multi-format Poll:
+### Multi-format Poll:
 
+```
 /pollmult Which country has the largest Bengali-speaking population?
 a) India
 b) Bangladesh ✅
 c) Pakistan
 Based on 2023 language census data
+```
 
-Quiz Poll:
+### Quiz Poll:
 
+```
 /pollquiz What is the capital of France?
 Paris ✅ | Berlin | Madrid
 Correct answer is Paris.
+```
 
+---
 
-🔒 Rate Limiting
+## 🔒 Rate Limiting
 
-To avoid abuse, each user can trigger a command once every 3 seconds. If exceeded, the bot replies:
+To avoid abuse, each user can trigger a command once every **3 seconds**.  
+If exceeded, the bot replies:
 
 > ❌ দয়া করে একটু অপেক্ষা করুন! খুব দ্রুত কমান্ড পাঠাচ্ছেন।
 
+---
 
-💡 Planned Features
+## 💡 Planned Features
 
-🔄 Multi-language UI
+- 🔄 Multi-language UI  
+- 🕑 Scheduled Polls  
+- 📊 Poll Analytics Dashboard  
+- 📄 Poll Templates  
 
-🕑 Scheduled Polls
-
-📊 Poll Analytics Dashboard
-
-📄 Poll Templates
-
+---
 
 ## 📜 License
 
-MIT License © [SudoR2spr]
-
+MIT License © [SudoR2spr]  
 See the [LICENSE](./LICENSE) file for more info.
