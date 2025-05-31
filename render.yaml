@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: quiz-poll-bot
+    env: docker
+    plan: free
+    branch: master
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: "node Op_poll.js"
+    envVars:
+      - key: BOT_TOKEN
+        value: your_bot_token_here
+      - key: BASE_URL
+        value: https://your-app-url.onrender.com
+      - key: PORT
+        value: 3000
