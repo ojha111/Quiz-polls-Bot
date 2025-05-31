@@ -6,7 +6,6 @@ services:
     branch: master
     dockerfilePath: ./Dockerfile
     buildCommand: ""
-    startCommand: "node Op_poll.js"
     envVars:
       - key: BOT_TOKEN
         value: your_bot_token_here
