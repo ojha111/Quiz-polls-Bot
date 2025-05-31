@@ -4,7 +4,8 @@
   "type": "module",
   "main": "Op_poll.js",
   "scripts": {
-    "start": "node Op_poll.js"
+    "start": "node Op_poll.js",
+    "test": "echo \"No tests available\""
   },
   "dependencies": {
     "dotenv": "^16.4.0",
