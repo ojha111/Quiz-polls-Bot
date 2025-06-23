@@ -5,7 +5,7 @@ import rateLimitPkg from 'telegraf-ratelimit';
 const rateLimit = rateLimitPkg.default || rateLimitPkg;
 
 const app = express();
-const BOT_TOKEN = process.env.BOT_TOKEN || "70053242083:AAEoAbT9zc6VOudy_Wo";
+const BOT_TOKEN = process.env.BOT_TOKEN || "7287949215:AAGjbchRm2wFRKngvScGL3f1lHAHkhw31N4";
 const BASE_URL = process.env.BASE_URL || "https://poll-bot-angel.onrender.com";
 const PORT = process.env.PORT || 3000;
 
